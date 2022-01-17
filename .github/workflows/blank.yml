@@ -32,6 +32,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          chmod +x ./.github/workflows/test.sh
+          sh ./.github/workflows/test.sh
           ls -a
           pwd
           echo Add other actions to build,
